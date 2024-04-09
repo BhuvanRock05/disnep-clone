@@ -31,7 +31,7 @@ function Slider() {
     }
 
   return (
-    <div>
+    <div className='w-screen'>
         <HiChevronLeft className='hidden md:block absolute text-[30px] mx-8 mt-[150px] cursor-pointer'
             onClick={()=>sliderLeft(elementRef.current)}/>
         <HiChevronRight className='hidden md:block absolute text-[30px] mx-8 mt-[150px] cursor-pointer right-0' onClick={()=>sliderRight(elementRef.current)}/>

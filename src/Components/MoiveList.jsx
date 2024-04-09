@@ -43,6 +43,7 @@ function MoiveList({genreId, index_}) {
                 <>
                 {index_%3==0? <HrMovieCard movie={item}/> : <MovieCard movie={item}/>}
                 </>
+                
             ))}
         </div>
 

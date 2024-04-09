@@ -11,6 +11,8 @@ import marvelV from './../assets/videos/marvel.mp4'
 import nationalGeographicV from './../assets/videos/national-geographic.mp4'
 import pixarV from './../assets/videos/pixar.mp4'
 
+
+
 function ProductionHouse() {
 
     const productionHouseList=[
@@ -43,16 +45,17 @@ function ProductionHouse() {
     ]
 
   return (
-    <div className='flex gap-2 md:gap-5 px-5 md:px-16 p-3'> 
+    <div className='flex gap-2 md:gap-5 px-5 md:px-16 p-3 w-svw'> 
       {productionHouseList.map((item)=>(
         <div className='border-[2px] border-gray-600 rounded-lg hover:scale-110 transition-all 
-            duration-300 ease-in-out cursor-pointer relative shadow-lg shadow-black'>
+          duration-300 ease-in-out cursor-pointer relative shadow-lg shadow-black'>
 
-            <img src={item.image} alt="image" className='w-full z-50' />
+          <img src={item.image} alt="image" className='w-full z-50' />
+          <video src={item.video} autoPlay loop playsInline className='absolute rounded-lg top-0 opacity-0 hover:opacity-60' ></video>
 
-            <video src={item.video} autoPlay loop playsInline className='absolute rounded-lg top-0 opacity-0 hover:opacity-60' ></video>
         </div>
       ))}
+      
     </div>
   )
 }
