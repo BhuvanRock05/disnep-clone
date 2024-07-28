@@ -42,9 +42,10 @@ function Header() {
 
   return (
     <div className='flex items-center justify-between p-5 w-screen'>
-      <div className='flex items-center gap-6 w-screen'>
+      <div className='flex items-center gap-2 md:gap-6 '>
 
-        <img src={logo} alt="logo" className='w-[80px] object-cover md:w-[115px]'/>
+        {/* <img src={logo} alt="logo" className='w-[80px] object-cover md:w-[115px]'/> */}
+        <h1 className='font-semibold text-orange-300 text-[20px] '>CineFlex</h1>
         <div className='hidden md:flex gap-6'>
           {menu.map((item)=>(
             <Headeritem name={item.name} Icon={item.icon}/>
